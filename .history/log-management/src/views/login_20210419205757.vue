@@ -1,0 +1,33 @@
+<template>
+    <div class="login">
+        <h1 @click="goIndex">NICE TO MEET YOU</h1>
+        <el-input placeholder="请输入账号" class="login-phone"></el-input>
+        <el-input placeholder="请输入密码" class="login-password"></el-input>
+        <span>退出登录</span>
+        <a href="
+        https://www.bilibili.com/">bilibili</a>
+    </div>
+</template>
+
+<script>
+
+export default({
+  methods: {
+    goIndex() {
+      this.$router.push({path: '/index'})
+    }
+  }
+})
+</script>
+
+<style lang="scss" scoped>
+  .login {
+    height: 500px;
+    display: inline-block;
+    // &-phone {
+    //   width: 20%;
+    //   margin-bottom: 20px;
+    // }
+  }
+</style>
+
