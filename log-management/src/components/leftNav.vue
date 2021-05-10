@@ -24,9 +24,9 @@
           <span>记录</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1">妙手偶得</el-menu-item>
-          <el-menu-item index="1-2">朝花夕拾</el-menu-item>
-          <el-menu-item index="1-3">继往开来</el-menu-item>
+          <el-menu-item index="1-1">随笔</el-menu-item>
+          <el-menu-item index="1-2">日记</el-menu-item>
+          <el-menu-item index="1-3">总结</el-menu-item>
         </el-menu-item-group>
         <!-- <el-submenu index="1-4">
           <template slot="title">选项4</template>

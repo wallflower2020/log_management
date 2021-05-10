@@ -45,6 +45,21 @@ export default new Router({
       path: "/special",
       name: "special",
       component: special //特殊
-    }
+    },
+    // {
+    //   path: "/special",
+    //   name: "special",
+    //   component: special //特殊
+    // },
+    // {
+    //   path: "/special",
+    //   name: "special",
+    //   component: special //特殊
+    // },
+    // {
+    //   path: "/special",
+    //   name: "special",
+    //   component: special //特殊
+    // },
   ]
 });
