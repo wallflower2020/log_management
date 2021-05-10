@@ -16,12 +16,12 @@
           width="180">
         </el-table-column>
         <el-table-column
-          prop="thing"
+          prop="name"
           label="事宜"
           width="180">
         </el-table-column>
         <el-table-column
-          prop="tip"
+          prop="address"
           label="备注">
         </el-table-column>
       </el-table>
@@ -45,20 +45,20 @@ export default {
       showDialog: false,
       tableData: [{
             date: '6:00--7:00',
-            thing: '起床洗漱早饭',
-            tip: '一日之计在于晨'
+            name: '起床洗漱早饭',
+            address: '一日之计在于晨'
           }, {
             date: '11:00--12:00',
-            thing: '准备吃饭',
-            tip: '作业写完没？'
+            name: '准备吃饭',
+            address: '作业写完没？'
           }, {
             date: '16:00--18:00',
-            thing: '户外运动',
-            tip: '篮球？游泳？骑车？'
+            name: '户外运动',
+            address: '篮球？游泳？骑车？'
           }, {
             date: '22:00--23:00',
-            thing: '准备睡觉',
-            tip: '今天都干了啥？'
+            name: '准备睡觉',
+            address: '今天都干了啥？'
           }]
     }
   },

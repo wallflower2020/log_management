@@ -19,32 +19,32 @@ export default new Router({
   routes: [
     {
       path: "/",
-      component: index //首页
+      component: index
     },
     {
       path: "/index",
       name: "index",
-      component: index //首页
+      component: index
     },
     {
       path: "/login",
       name: "login",
-      component: login //登录
+      component: login
     },
     {
       path: "/commission",
       name: "commission",
-      component: commission  //代办
+      component: commission
     },
     {
       path: "/everyday",
       name: "everyday",
-      component: everyday //日常
+      component: everyday
     },
     {
       path: "/special",
       name: "special",
-      component: special //特殊
+      component: special
     }
   ]
 });

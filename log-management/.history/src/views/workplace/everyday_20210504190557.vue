@@ -4,8 +4,6 @@
       <left-nav></left-nav>
     </div>
     <div>
-      <el-calendar v-model="value">
-      </el-calendar>
     </div>
   </div>
 </template>
@@ -19,7 +17,7 @@ export default {
   },
   data() {
     return {
-      value: new Date()
+      
     }
   }
 }

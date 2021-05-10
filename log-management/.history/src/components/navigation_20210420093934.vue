@@ -31,7 +31,7 @@ export default {
     },
     goCommission() {
       this.$router.push({path: '/commission'})
-    },
+    }
   }
 }
 </script>

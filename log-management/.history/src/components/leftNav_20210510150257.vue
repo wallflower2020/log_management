@@ -2,7 +2,7 @@
   <el-row class="tac">
      <el-col :span="5" class="left">
     <el-menu
-      :default-active="1"
+      :default-active="check"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose">
@@ -42,7 +42,7 @@
   export default {
     data () {
       return {
-        
+        check: '1',
       }
     },
     methods: {
@@ -52,14 +52,17 @@
       handleClose(key, keyPath) {
         console.log(key, keyPath);
       },
-      goEveryday() {
+      goEveryday(index) {
         this.$router.push({path: '/everyday'})
+        this.check = '1'
       },
-      goCommission() {
+      goCommission(index) {
         this.$router.push({path: '/commission'})
+        this.check = '2'
       },
-      goSpecial() {
+      goSpecial(index) {
         this.$router.push({path: '/special'})
+        this.check = '3'
       },
     }
   }

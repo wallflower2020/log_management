@@ -2,19 +2,19 @@
   <el-row class="tac">
      <el-col :span="5" class="left">
     <el-menu
-      :default-active="1"
+      :default-active="check"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose">
-      <el-menu-item index="1" @click="goEveryday()">
+      <el-menu-item index="1" @click="goEveryday(index)">
         <i class="el-icon-s-claim"></i>
         <span slot="title">日常</span>
       </el-menu-item>
-      <el-menu-item index="2" @click="goCommission()">
+      <el-menu-item index="2" @click="goCommission(index)">
         <i class="el-icon-loading"></i>
         <span slot="title">代办</span>
       </el-menu-item>
-      <el-menu-item index="3" @click="goSpecial()">
+      <el-menu-item index="3" @click="goSpecial(index)">
         <i class="el-icon-warning"></i>
         <span slot="title">重要</span>
       </el-menu-item>
@@ -42,7 +42,7 @@
   export default {
     data () {
       return {
-        
+        check: 1,
       }
     },
     methods: {
@@ -52,14 +52,17 @@
       handleClose(key, keyPath) {
         console.log(key, keyPath);
       },
-      goEveryday() {
+      goEveryday(index) {
         this.$router.push({path: '/everyday'})
+        this.check = index
       },
-      goCommission() {
+      goCommission(index) {
         this.$router.push({path: '/commission'})
+        this.check = index
       },
-      goSpecial() {
+      goSpecial(index) {
         this.$router.push({path: '/special'})
+        this.check = index
       },
     }
   }
